@@ -11,13 +11,23 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
     color: #fff;
-    background-image: url('IMG_2264.JPG');
+    /*background-image: url('IMG_2264.JPG') no-repeat fixed center;*/
+    background: lightblue url('IMG_2264.JPG') no-repeat fixed center; 
 }
+
 
 h1{
    /* text-align: center;*/
+}
+
+button:hover {
+    cursor: pointer;
+  }
+
+button, input[type="text"] {
+    padding: 5px;
 }
 
 #js-search-term{
@@ -30,7 +40,11 @@ h1{
 }
 #results{
     color: #fff;
+    max-width: 600px;
+    scroll-behavior: smooth;
+    height: 50vh;
 }
+
 
 
 .hidden{
